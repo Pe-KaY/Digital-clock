@@ -1,0 +1,71 @@
+#clock {
+  background-image: url("../public/Nature.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main clock wrapper */
+.clock__wrapper {
+  width: 60%;
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+  font-family: monospace;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+/* Didital clock header text */
+h1 {
+  font-size: 2rem;
+  color: rgb(253, 255, 254);
+}
+
+/* this wraps the clock mode (12Hours or 24hours) */
+.clock__clockmodeWrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+/* mode switch icon */
+i {
+  font-size: 1.3rem;
+}
+/* clock mode text */
+.clock__clockmodeWrapper > p {
+  font-size: 1rem;
+}
+
+/* media queries begins here */
+@media (max-width: 1145px) {
+  .clock__wrapper {
+    width: 40rem;
+  }
+}
+@media (max-width: 653px) {
+  .clock__wrapper {
+    width: 30rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 475px) {
+  .clock__wrapper {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 475px) {
+  .clock__wrapper {
+    width: 20rem;
+    font-size: 3rem;
+  }
+}
+
+/* all styling ends here */
