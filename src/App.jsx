@@ -27,9 +27,9 @@ function App() {
   function twelveHour() {
     const gmthours = hours > 12 ? hours - 12 : hours
     const amOrpm = hours >= 12 ? "pm" : "am"
-    return `${timeformat(gmthours)}${amOrpm}:${timeformat(
-      minutes
-    )}:${timeformat(seconds)}`
+    return `${timeformat(gmthours)}:${timeformat(minutes)}:${timeformat(
+      seconds
+    )}${amOrpm}`
   }
 
   // this function switches the mode start variable between 12hour and 24hour clock
