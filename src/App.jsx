@@ -25,7 +25,7 @@ function App() {
 
   // convert the  24 hour clock format to 12 hour clock
   function twelveHour() {
-    const gmthours = hours > 12 ? hours - 12 : hours
+    const gmthours = hours === 0 ? 12 : hours > 12 ? hours - 12 : hours
     const amOrpm = hours >= 12 ? "pm" : "am"
     return `${timeformat(gmthours)}:${timeformat(minutes)}:${timeformat(
       seconds
